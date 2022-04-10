@@ -31,7 +31,7 @@ public class Main {
         if (i >= leftBoundary) System.out.println(i);
     }
     System.out.println("Доп задание");
-    //Задание 5
+    //Задание 4
     for (i = 1; i <= 30; i++) {
         System.out.print(i + ": ");
         if ((i % 3 == 0) && (i % 5 != 0)) System.out.print("ping");
@@ -39,7 +39,7 @@ public class Main {
         if ((i % 5 == 0) && (i % 3 == 0)) System.out.print("ping pong");
         System.out.println();
     }
-    //Задание 6
+    //Задание 5
     int firstPreviousNumber = 0;
     int secondPreviousNumber = 1;
     int currentNumber;
