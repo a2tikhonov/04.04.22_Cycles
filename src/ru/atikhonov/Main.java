@@ -1,5 +1,7 @@
 package ru.atikhonov;
 
+import java.sql.SQLOutput;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -28,5 +30,26 @@ public class Main {
     for (i = 0; i <= rightBoundary; i += 79 ) {
         if (i >= leftBoundary) System.out.println(i);
     }
+    System.out.println("Доп задание");
+    //Задание 5
+    for (i = 1; i <= 30; i++) {
+        System.out.print(i + ": ");
+        if ((i % 3 == 0) && (i % 5 != 0)) System.out.print("ping");
+            else if ((i % 5 == 0) && (i % 3 != 0)) System.out.print("pong");
+        if ((i % 5 == 0) && (i % 3 == 0)) System.out.print("ping pong");
+        System.out.println();
+    }
+    //Задание 6
+    int firstPreviousNumber = 0;
+    int secondPreviousNumber = 1;
+    int currentNumber;
+    System.out.print(firstPreviousNumber + ", " + secondPreviousNumber + ", ");
+    for (i = 0; i <= 10; i++) {
+        currentNumber = firstPreviousNumber + secondPreviousNumber;
+        if (i < 10) System.out.print(currentNumber + ", ");
+            else System.out.print(currentNumber);
+        firstPreviousNumber = secondPreviousNumber;
+        secondPreviousNumber = currentNumber;
+        }
     }
 }
